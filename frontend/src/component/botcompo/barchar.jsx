@@ -10,22 +10,22 @@ export const Bar = (props) =>{
     const [feedData,setFeed] = useState([]);
     useEffect(()=>{
         // fetch("http://localhost:500/studentAPI")
-        fetch("/studentAPI")
+        fetch("https://sodd-dash-board-mw6e.vercel.app/studentAPI")
         .then(response => response.json())
         .then(data => setStudent(data))
     },[]);
     useEffect(()=>{
-            fetch("/badAPI")
+            fetch("https://sodd-dash-board-mw6e.vercel.app/badAPI")
             .then(response => response.json())
             .then(data => setBad(data))
     },[]);
     useEffect(()=>{
-        fetch("/goodAPI")
+        fetch("https://sodd-dash-board-mw6e.vercel.app/goodAPI")
         .then(response => response.json())
         .then(data => setGood(data))
     },[]);
     useEffect(()=>{
-        fetch("/feedAPI")
+        fetch("https://sodd-dash-board-mw6e.vercel.app/feedAPI")
         .then(response => response.json())
         .then(data => setFeed(data))
     },[]);
