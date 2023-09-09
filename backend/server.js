@@ -25,13 +25,13 @@ app.use(
 app.use(express.static(path.join(__dirname, 'FrontEnd/build')));
   console.log(__dirname);
   // set up the cors for the ss events
-  // app.use(cors(
-    // {
-  // origin:['https://shri-swami-samartha.vercel.app'],
-  // methods:['GET', 'POST','PUT'],
-  // credentials:true
-// }
-// ));
+  app.use(cors(
+    {
+  origin:['https://sodd-dash-board.vercel.app'],
+  methods:['GET', 'POST','PUT','DELETE'],
+  credentials:true
+}
+));
 // app.use(cors({
 //   origin:['http://localhost:3000'],
 //   methods:['GET', 'POST','PUT','DELETE'],
