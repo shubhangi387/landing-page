@@ -1,7 +1,7 @@
 {
   "name": "dashboard",
   "version": "0.1.0",
-  "proxy":"http://localhost:500",
+  "proxy":"https://sodd-dash-board-mw6e.vercel.app",
   "private": true,
   "dependencies": {
     "@canvasjs/react-charts": "^1.0.0",
