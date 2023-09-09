@@ -1,0 +1,684 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+  --mian-background-color: white;     
+  /* #001C30; */
+  --main-font-color:#071952;
+  --card-color:rgb(248, 248, 248);
+  --data-box-color:#F3AA60;
+  --data-background-color:#E57C23;
+  --button-copy:#071952;
+  /* --button-copy:#FFC436; */
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav button{
+    margin: 1em;
+    height: 2em;
+    border: none;
+    background-color: transparent;
+    font-size: clamp(1.2em,1vw,1.8em);
+}
+
+.nav button:hover{
+    background-color: antiquewhite;
+}
+
+
+
+.profile h5{
+    font-size: clamp(1em,2vw,1.2em);
+    /* font-family: 'Dancing Script', cursive; */
+}
+
+.apps{
+    height: auto;
+    width: 100%;
+}
+
+.dashboard{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.container1{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    
+}
+
+.sseventHome{
+  background-color: var(--mian-background-color);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll; 
+  overflow-x: hidden;
+}
+
+.divider{
+  height: max-content;
+  min-height: 46vh;;
+  margin: 1em;
+}
+
+.head{
+    background-color: var(--mian-background-color);
+    display: flex;
+    flex-direction: row;
+    height: max-content;
+    position:static;
+    justify-content: space-between;
+    align-items: center;
+    /* box-shadow: inset 1px 1px 5px grey; */
+}
+
+.head div h5{
+    color: var(--main-font-color);
+    font-size: small;
+    margin: 0 1em;
+}
+
+.head div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+}
+
+.head button{
+    background:transparent;
+    border: none;
+    color: var(--main-font-color);
+    padding: .1em;
+    margin: 0 .5em;
+    font-size: 1em;
+}
+
+.box{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.box{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatbot{
+    background-color: var(--mian-background-color);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.chatbar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: "#176B87";
+}
+
+.doughnut{
+    display: flex;
+    /* flex-direction: row; */
+    text-align: center;
+    color: "#176B87";
+    margin: .2em;
+}
+
+.doughnutStyler{
+background-color: var(--mian-background-color);
+box-shadow: 1px 1px 5px grey;
+}
+
+.doughnut div{
+    /* width: 20%; */
+    /* max-height: 6em; */
+    /* margin:  .3em 0.3em; */
+    flex: 1;
+    border-radius: .5em;
+    background-color: var(--card-color);
+}
+
+.barChart{
+    width: 50%;
+    color:#176B87;
+    margin: 0 .5em 0 .5em;
+    /* flex: 1; */
+    background-color: rgb(16, 46, 83);
+}
+
+.lines{
+  /* width: 32em; */
+  height: 15em;
+  margin: .3em;
+  background-color: var(--card-color);
+  border-radius: .5em;
+  box-shadow: 1px 1px 5px rgb(158, 158, 158);
+}
+
+.data_lines{
+  /* width: 32em; */
+  height: 15em;
+  margin: .5em;
+  background-color: var(--card-color);
+  border-radius: .5em;
+  box-shadow: 1px 1px 5px rgb(158, 158, 158);
+}
+
+.ssevent_Lines{
+  height: 16em;
+  margin: .3em;
+  background-color: var(--mian-background-color);
+  border-radius: .5em;
+}
+
+.listsSS{
+  /* width: 32em; */
+  height: 100%;
+  margin: .3em;
+background: transparent;
+  border-radius: .5em;
+}
+
+
+.bar{
+    height: 30%;
+    width: 30%;
+}
+
+.chatdought{
+    width: 100%;
+    height:100%;
+}
+
+
+/* stacked line graph */
+
+.graphs{
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    align-content: space-between;
+}
+
+.graphs div{
+  flex: 1;
+  display: flex;
+  /* flex-direction: column; */
+  /* align-items: center;
+  justify-content: center; */
+  height: 14em;
+}
+
+
+.datas{
+  display: flex;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-around;
+    align-content: space-between; */
+}
+.datas div{
+  /* flex: 1; */
+  display: flex;
+  /* flex-direction: column; */
+  /* align-items: center;
+  justify-content: center; */
+  /* height: 20em; */
+}
+
+.header{
+  color: var(--main-font-color);
+  margin: 1em;
+}
+
+.dought{
+    height: 5%;
+    width: 5%;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 20%;
+    /* background-color: #071952; */
+    /* background: rgb(246,107,14);
+background: linear-gradient(21deg, rgba(246,107,14,1) 0%, rgba(251,196,3,1) 54%, rgba(252,217,0,1) 90%); */
+    color: rgb(32, 99, 103);
+    position:static;
+    top: 0;
+    /* display: none; */
+    left: 5%; /* Move sidebar off the screen */
+    transition: left 0.3s ease-in-out;
+    animation: sidebar 1s ease-out ;
+    background: rgb(246,107,14);
+    background: linear-gradient(3deg, rgba(246,107,14,1) 17%, rgba(251,181,3,1) 100%);
+    transition: .5s;
+  }
+
+  @keyframes sidebar {
+    from{width: 0;}
+    to{width: 20%;}
+  }
+ 
+
+  
+  .profile{
+    height:10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    /* font-family: 'Dancing Script', cursive; */
+    padding:  2em 0 2em 0;
+}   
+  .sidebar.open {
+    /* display: none; */
+    /* Show sidebar when open */
+    /* display: none !important; */
+  }
+  
+  .sidebarList{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-font-color) ;
+    /* text-align: center  ; */
+  }
+
+  .sidebarList .row{
+    height: 3em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1em;
+  }
+  .sidebarList .row:hover{
+    background-color: #E57C23;
+    color: #071952  ;
+  }
+
+  .toggle-button {
+    background-color: transparent;
+    border: none;
+    color: #176B87;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+@media (max-width: 768px) {
+  .sidebarList .row{
+    height: 3em;
+    width: 100%;
+    /* padding-left: 2em; */
+    margin: 0;
+    padding: 0%;
+    font-size: clamp(.7em,2vw,1em);
+  }
+  
+.profile h5{
+  font-size: clamp(.9em,2vw,1.2em);
+  /* font-family: 'Dancing Script', cursive; */
+}
+.sidebarList{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  color: var(--main-font-color) ;
+  /* text-align: center  ; */
+  font-size: clamp(1em,1vw,1.3em);
+}
+
+.sidebarList .row:hover{
+  background-color: #E57C23;
+  color: #071952  ;
+  
+}
+}
+
+  /* Add animations */
+  .sidebar {
+    transition: left 1s ease-in-out, opacity 0.3s ease-in-out;
+  }
+  
+  .sidebar.open {
+    left: 0;
+    width: 0%; /* Initial width when sidebar is open */
+    animation: sidebarclose 1s linear; /* Adjust the animation timing function */
+    transition: 1s ease;
+  }
+  
+  @keyframes sidebarclose {
+    from {
+      width: 20%;
+    }
+    to {
+      width: 0%;
+    }
+  }
+  
+  
+  .sidebar:not(.open) {
+    opacity: 1;
+  }
+
+
+
+
+  /* DataField */
+
+  .dataField{
+    /* color: rgb(149, 238, 250); */
+    color: var(--main-font-color);
+    display: flex;
+    background-color: var(--mian-background-color);
+    flex-direction: column;
+    /* overflow: hidden; */
+    overflow: hidden;
+    max-height: 15em;
+    /* height: 15em; */
+    text-align: left;
+    padding: .5em;
+    border-radius: .3em;
+  }
+
+  .dataField h4{
+    text-align: center;
+  }
+
+  .dataField:hover{
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+
+
+  .dataContainer{
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    background-color: var(--data-box-color);
+    width: 100%;
+    border-radius: .4em;    margin-top  : .5em;
+    box-shadow: 1px 1px 5px grey;
+  }
+
+  .dataContainer div{
+    padding: .4em 1em;
+  }
+
+  .dataContainer div h5{
+    font-size: clamp(.7em , 1vw,1.2em);
+  }
+
+  .transDiv{
+    background-color: transparent;
+  }
+  
+  .deletBut{
+    background: transparent;
+    color: #176B87;
+    border: none;
+  }
+
+  /* Wrong data set */
+  .wrongnav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 2em;
+    padding: 1em;
+  }
+
+  .wrongnav div{
+    justify-content:flex-end;
+  }
+
+  .wrongnav div button{
+    background: transparent;
+    border: none;
+    color: var(--button-copy);
+    margin: 0 .3em;
+    cursor: pointer;
+  }
+  /* port folio */
+
+  .portfolio{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: "#176B87";
+  }
+
+/* Heading */
+
+.heading{
+  color:var(--main-font-color); 
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color:rgb(255, 211, 136);
+  border-radius: .4em;
+}
+
+.heading h1{
+  padding: 1em;
+  padding-bottom: .5em;
+  font-family: 'Dancing Script', cursive;
+}
+
+.heading p{
+  padding-left: 2.5em;
+}
+
+
+/* form for the testimonial add */
+
+.formTestimonial div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: max-content;
+}
+
+.formTestimonial div input{
+  width: 70%;
+  padding: .2em;
+  margin: .5em;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid aliceblue;
+  color: var(--main-font-color);
+}
+.formTestimonial div input:focus{
+  outline: none;
+  caret-color: rgb(38, 70, 99);
+}
+.formTestimonial div input::placeholder{
+  color:var(--main-font-color);
+  opacity: .3;
+}
+
+.formTestimonial div button{
+  width: max-content;
+  min-width: 20%;
+  padding: .2em;
+  margin: .5em;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid aliceblue;
+  color: var(--main-font-color) ;
+  transition: .5s all ease;
+}
+
+.formTestimonial div button:hover {
+  color: rgb(35, 35, 35);
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+
+/* Creadentials */
+
+.Credential{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y:hidden;
+  background: rgb(246,107,14);
+background: linear-gradient(3deg, rgba(246,107,14,1) 17%, rgba(251,181,3,1) 100%);
+  overflow-x: hidden;
+}
+
+.contForm{
+  height: 100%;
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+  background-color: rgba(255, 255, 255, 0.8);
+    /* backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(50px); */
+}
+
+
+.contForm h4,h6{
+  color: var(--main-font-color);
+  text-align: left;
+} 
+
+/* .contForm h4{
+  border-bottom: 5px solid #F3AA60;
+} */
+
+.contForm h6{
+  color: var(--main-font-color);
+  font-size: clamp(1em,1vw,1.5em);
+}
+.contForm input{
+  border: none;
+  /* border-radius: .2em; */
+  background-color: transparent;
+  width: 100%;
+  padding: .3em;
+  margin: 1em 0;
+  border-bottom:1.5px solid #F3AA60;
+}
+.contForm input:focus{
+  outline: none;
+}
+
+.contForm button{
+  border: none;
+  padding: .3em;
+  border-radius: .2em;
+  background-color: #F3AA60;
+  transition: .5s ease-out;
+}
+
+.contForm button:hover{
+  background-color: #E57C23;
+}
+
+.contForm a{
+  cursor: pointer;
+}
+
+
+/* adding the roles  */
+.formrole {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.formrole input{
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid aliceblue;
+  caret-color: aliceblue;
+  margin: .1em;
+  color:aliceblue;
+}
+.formrole input:focus{
+  outline: none;
+}
+
+.formrole button{
+  border: none;
+  background-color: transparent;
+  color: aliceblue;
+  border-bottom: 1px solid aliceblue;
+  width: max-content;
+  padding: .2em;
+}
+.formrole button:hover {
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.userContainer{
+  height: max-content;
+  display: flex;
+  height: max-content;
+  background-color: var(--data-box-color);
+  width: 100%;
+  border-radius: .4em;    
+  margin-top  : .5em; 
+  box-shadow: 1px 1px 5px grey;
+}
+
+.userContainer div{
+  padding: .4em 1em;
+}
+
+.userContainer div h5{
+  font-size: clamp(.7em , 1vw,1.2em);
+}
+
+#notifier{
+  color: red;
+  font-size: .5em;
+  margin: .3em;
+}
