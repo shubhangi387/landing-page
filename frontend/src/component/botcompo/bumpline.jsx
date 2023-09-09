@@ -9,7 +9,7 @@ import { useState } from 'react';
 export default function Bump(){
     const [feeddata,setFeed] = useState([])
     useEffect(()=>{
-        fetch("/feedAPI")
+        fetch("https://sodd-dash-board-mw6e.vercel.app/feedAPI")
         .then(response => response.json())
         .then(data => setFeed(data))
     },[]);
