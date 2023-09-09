@@ -18,7 +18,7 @@ export default function SseventData(props) {
     },[]);
 
     function setTestimonials(){
-        fetch("/testAPI")
+        fetch("https://sodd-dash-board-mw6e.vercel.app/testAPI")
         .then(response => response.json())
         .then(data => setTest(data.data))
     }
@@ -36,7 +36,7 @@ export default function SseventData(props) {
     const submitTest = (event) =>{
         event.preventDefault();
         if(admin){
-            fetch("/testAPI",{
+            fetch("https://sodd-dash-board-mw6e.vercel.app/testAPI",{
             method: "POST",
             headers:{
                 'Content-Type': 'application/json'
@@ -60,7 +60,7 @@ export default function SseventData(props) {
     // data is deleted from the database
     const DeleteData = (id) => {
         if(admin){
-            fetch("/testAPI", {
+            fetch("https://sodd-dash-board-mw6e.vercel.app/testAPI", {
             method: "DELETE",
             headers: {
                 'Content-Type': 'application/json'
