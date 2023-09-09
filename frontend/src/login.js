@@ -76,7 +76,7 @@ export default function Login1() {
           if((rout=== 'register' && signData.username!=null && signData.password!=null && signData.name!=null)
           || ((rout=== 'login' && formData.username!=null && formData.password!=null))
           ){
-          fetch(`/${rout}`,{
+          fetch(`https://sodd-dash-board-mw6e.vercel.app/${rout}`,{
           method:"POST",
           headers:{
           'Content-Type':'application/json'
