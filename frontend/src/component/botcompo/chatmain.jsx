@@ -17,27 +17,27 @@ export default function Chatbar(props) {
     const [feedData,setFeed] = useState([]);
     const [wrongData,setWrong] = useState([]);
     useEffect(()=>{
-        fetch("http/studentAPI")
+        fetch("https://sodd-dash-board-mw6e.vercel.app/studentAPI")
         .then(response => response.json())
         .then(data => setStudent(data))
     },[]);
     useEffect(()=>{
-            fetch("/badAPI")
+            fetch("https://sodd-dash-board-mw6e.vercel.app/badAPI")
             .then(response => response.json())
             .then(data => setBad(data))
     },[]);
     useEffect(()=>{
-        fetch("/goodAPI")
+        fetch("https://sodd-dash-board-mw6e.vercel.app/goodAPI")
         .then(response => response.json())
         .then(data => setGood(data))
     },[]);
     useEffect(()=>{
-        fetch("/feedAPI")
+        fetch("https://sodd-dash-board-mw6e.vercel.app/feedAPI")
         .then(response => response.json())
         .then(data => setFeed(data))
     },[]);
     useEffect(()=>{
-        fetch("/wrongAPI")
+        fetch("https://sodd-dash-board-mw6e.vercel.app/wrongAPI")
         .then(response => response.json())
         .then(data => setWrong(data))
     },[]);
