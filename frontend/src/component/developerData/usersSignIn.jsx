@@ -16,7 +16,7 @@ export default function UserRolls(props) {
   }, [props.auth]);
 
   function setUsers() {
-    fetch("/profile")
+    fetch("https://sodd-dash-board-mw6e.vercel.app/profile")
       .then(response => response.json())
       .then(data => {
         setUser(data.data);
@@ -36,7 +36,7 @@ export default function UserRolls(props) {
     // data is stored to the database
     const AddRole = (id) => {
         if(admin){
-        fetch("/profile", {
+        fetch("https://sodd-dash-board-mw6e.vercel.app/profile", {
           method: "PUT",
           headers: {
             'Content-Type': 'application/json'
@@ -70,7 +70,7 @@ export default function UserRolls(props) {
     // data is deleted from the database
     const DeleteData = (id) => {
         if(admin){
-            fetch("/profile", {
+            fetch("https://sodd-dash-board-mw6e.vercel.app/profile", {
           method: "DELETE",
           headers: {
             'Content-Type': 'application/json'
