@@ -11,7 +11,7 @@ export default function FeedLine(props) {
   // Wrong answers
   const [wrongDataSet,setWrong] = useState([]);
   useEffect(()=>{
-    fetch("http://localhost:500/wrongAPI")
+    fetch("https://sodd-dash-board.vercel.app/wrongAPI")
     .then(response => response.json())
     .then(data => setWrong(data))
   },[]);
@@ -20,7 +20,7 @@ export default function FeedLine(props) {
   // Bad Responces data
   const [badData,setBad] = useState([]);
   useEffect(()=>{
-    fetch("http://localhost:500/badAPI")  
+    fetch("https://sodd-dash-board.vercel.app/badAPI")  
     .then(response => response.json())
     .then(data => setBad(data))
   },[]);
@@ -28,7 +28,7 @@ export default function FeedLine(props) {
   // Feedback
     const [feeddata,setFeed] = useState([])
     useEffect(()=>{
-        fetch("http://localhost:500/feedAPI")
+        fetch("https://sodd-dash-board.vercel.app/feedAPI")
         .then(response => response.json())
         .then(data => setFeed(data))
     },[]);
