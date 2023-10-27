@@ -10,7 +10,7 @@ import { useEffect } from 'react';
 export default function Rich() {
     const [richData,setRich] = useState([])
     useEffect(()=>{
-        fetch("http://localhost:500//WebrichAPI")
+        fetch("https://sodd-dash-board.vercel.app/WebrichAPI")
         .then(response => response.json())
         .then(data => setRich(data))
     },[]);
