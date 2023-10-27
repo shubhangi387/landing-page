@@ -9,23 +9,23 @@ export const Bar = (props) =>{
     const [goodData,setGood] = useState([]);
     const [feedData,setFeed] = useState([]);
     useEffect(()=>{
-        // fetch("http://localhost:500/studentAPI")
+        // fetch("https://sodd-dash-board.vercel.app/studentAPI")
         fetch("http://localhost:500/studentAPI")
         .then(response => response.json())
         .then(data => setStudent(data))
     },[]);
     useEffect(()=>{
-            fetch("http://localhost:500/badAPI")
+            fetch("https://sodd-dash-board.vercel.app/badAPI")
             .then(response => response.json())
             .then(data => setBad(data))
     },[]);
     useEffect(()=>{
-        fetch("http://localhost:500/goodAPI")
+        fetch("https://sodd-dash-board.vercel.app/goodAPI")
         .then(response => response.json())
         .then(data => setGood(data))
     },[]);
     useEffect(()=>{
-        fetch("http://localhost:500/feedAPI")
+        fetch("https://sodd-dash-board.vercel.app/feedAPI")
         .then(response => response.json())
         .then(data => setFeed(data))
     },[]);
