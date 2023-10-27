@@ -27,7 +27,7 @@ app.use(express.static(path.join(__dirname, 'FrontEnd/build')));
   // set up the cors for the ss events
   app.use(cors(
     {
-  origin:['http://localhost:3000'],
+  origin:['https://sodd-dash-board.vercel.app'],
   methods:['GET', 'POST','PUT','DELETE'],
   credentials:true
 }
