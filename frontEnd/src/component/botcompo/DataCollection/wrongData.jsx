@@ -7,7 +7,7 @@ export default function WrongSet(props) {
     
     const [wrongDataSet,setWrong] = useState([]);
     useEffect(()=>{
-        fetch("http://localhost:500/wrongAPI")
+        fetch("https://sodd-dash-board.vercel.app/wrongAPI")
         .then(response => response.json())
         .then(data => setWrong(data))
     },[]);
@@ -26,7 +26,7 @@ export default function WrongSet(props) {
     // bad Data
     const [badData,setData] = useState([]);
     useEffect(()=>{
-        fetch("http://localhost:500/badAPI")
+        fetch("https://sodd-dash-board.vercel.app/badAPI")
         .then(response => response.json())
         .then(data => setData(data))
     },[]);
