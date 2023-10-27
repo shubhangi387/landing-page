@@ -5,7 +5,7 @@ import { useState } from "react";
 export default function Feedset() {
     const [feedData,setFeed] = useState([]);
     useEffect(()=>{
-        fetch("http://localhost:500/feedAPI")
+        fetch("https://sodd-dash-board.vercel.app/feedAPI")
         .then(response => response.json())
         .then(data => setFeed(data))
     },[]);
