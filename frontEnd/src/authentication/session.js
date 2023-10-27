@@ -1,6 +1,6 @@
 
 const getStatus = () => {
-    return fetch('http://localhost:500/secret', {
+    return fetch('https://sodd-dash-board.vercel.app/secret', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json'
@@ -14,7 +14,7 @@ const getStatus = () => {
   
 
   const logOut = () => {
-    return fetch('http://localhost:500/logout', {
+    return fetch('https://sodd-dash-board.vercel.app/logout', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json'
