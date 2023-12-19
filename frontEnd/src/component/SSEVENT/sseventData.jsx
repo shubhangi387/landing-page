@@ -87,7 +87,7 @@ export default function SseventData(props) {
     // contact dataset
     const [contacts,setContact] = useState([]);
     useEffect(()=>{
-        fetch("/contactAPI")
+        fetch("https://sodd-dash-board.vercel.app/contactAPI")
         .then(response => response.json())
         .then(data => setContact(data))
     },[]);
