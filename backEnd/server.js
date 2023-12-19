@@ -114,7 +114,7 @@ app.post('/login', function(req, res){
           res.send({status:false});
       } else{
           passport.authenticate('local')(req, res,()=>{
-              res.send({status:true});
+              res.send({status:true,user:req.user});
           });
       }
   })
