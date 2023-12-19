@@ -14,6 +14,7 @@ function App() {
   useEffect(() => {
      getStatus()
       .then(data => {
+        console.log(data);
         // Handle the data here
         setSession(data);
         
