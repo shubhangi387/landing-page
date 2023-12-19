@@ -95,7 +95,7 @@ export default function Login1() {
           })
           .then(response => response.json())
           .then(data => {
-            console.log(data.status);
+            console.log(data);
             if(data.status) {handleTab(); navigate("/chatbot");}
           })
           .catch(err => {
