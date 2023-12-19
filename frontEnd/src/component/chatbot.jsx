@@ -12,7 +12,7 @@ import Developer from "./Developer";
 
 export default function Chatbot(props) {
   const [isOpen, setIsOpen] = useState(true);
-const [Session, setSession] = useState([]);
+const [session, setSession] = useState([]);
   const navigate = useNavigate();
 
   const toggleSideBar = () => {
