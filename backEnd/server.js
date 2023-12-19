@@ -95,16 +95,29 @@ app.post('/login', function(req, res){
       username: req.body.username,
       password: req.body.password
   });
-  req.login(user,function(err){
+  passport.authenticate('local',(err)=>{
+    if(err){
+      res.status(404).send({status:false,message:err.message});
+    } else{
+      req.login(user,function(err){
       if(err){
           console.log(err);
-          res.send({status:false});
-      } else{
-          passport.authenticate('local')(req, res,()=>{
-              res.send({status:true});
-          });
+          res.status(400).send({status:false,message:err.message});
       }
+        res.send({status:true});
   })
+              res.send({status:true});
+  });
+  // req.login(user,function(err){
+  //     if(err){
+  //         console.log(err);
+  //         res.send({status:false});
+  //     } else{
+  //         passport.authenticate('local')(req, res,()=>{
+  //             res.send({status:true});
+  //         });
+  //     }
+  // })
 })
 
 app.get('/logout', function(req, res){
