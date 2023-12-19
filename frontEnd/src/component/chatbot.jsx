@@ -39,7 +39,6 @@ const [session, setSession] = useState([]);
         console.log(data);
         // Handle the data here
         setSession(data);
-        
       })
       .catch(error => {
         console.error('Error:', error);
