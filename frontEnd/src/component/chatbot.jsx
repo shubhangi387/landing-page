@@ -11,7 +11,7 @@
 
 // export default function Chatbot(props) {
 
-//   const [Session, setSession] = useState({ user: { name: '' } });
+//   const [Session, setSession] = useState({});
 
 //   async function render(){
 //      await getStatus()
