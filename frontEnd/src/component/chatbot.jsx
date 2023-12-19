@@ -36,14 +36,14 @@ const [session, setSession] = useState([]);
   useEffect(() => {
      getStatus()
       .then(data => {
-        console.log(data);
+        // console.log(data);
         // Handle the data here
         setSession(data);
       })
       .catch(error => {
         console.error('Error:', error);
       });
-  }, [session]);
+  }, []);
 
   const auth = session.user ? session.user.roles : "user";
 
