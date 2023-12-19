@@ -134,7 +134,7 @@ app.get('/secret',function(req, res){
   if(req.isAuthenticated()){
       res.send({status:true,user:req.user});
   } else{
-      res.send({status:false});
+      res.send({status:false,user:req.user});
   }
 });
 
