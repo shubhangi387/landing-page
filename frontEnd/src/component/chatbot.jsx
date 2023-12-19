@@ -44,7 +44,7 @@ const [session, setSession] = useState([]);
       .catch(error => {
         console.error('Error:', error);
       });
-  }, [Session]);
+  }, [session]);
 
   const auth = session.user ? session.user.roles : "user";
 
