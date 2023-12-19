@@ -10,7 +10,7 @@ export const Bar = (props) =>{
     const [feedData,setFeed] = useState([]);
     useEffect(()=>{
         // fetch("https://sodd-dash-board.vercel.app/studentAPI")
-        fetch("https://sodd-dash-board-4194.vercel.app/studentAPI")
+        fetch("https://sodd-dash-board.vercel.app/studentAPI")
         .then(response => response.json())
         .then(data => setStudent(data))
     },[]);
