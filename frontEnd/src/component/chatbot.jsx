@@ -12,7 +12,7 @@ import Developer from "./Developer";
 
 export default function Chatbot(props) {
   const [isOpen, setIsOpen] = useState(true);
-  const [session, setSession] = useState({ user: { name: '' } });
+const [Session, setSession] = useState([]);
   const navigate = useNavigate();
 
   const toggleSideBar = () => {
@@ -32,18 +32,19 @@ export default function Chatbot(props) {
     window.history.replaceState(null, null, '/');
   }
 
+
   useEffect(() => {
-    async function fetchSession() {
-      try {
-        const data = await getStatus();
+     getStatus()
+      .then(data => {
         console.log(data);
+        // Handle the data here
         setSession(data);
-      } catch (error) {
+        
+      })
+      .catch(error => {
         console.error('Error:', error);
-      }
-    }
-    fetchSession();
-  }, []);
+      });
+  }, [Session]);
 
   const auth = session.user ? session.user.roles : "user";
 
