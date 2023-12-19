@@ -141,7 +141,7 @@
 }
 
 .doughnut{
-    display: flex;
+    /* display: flex; */
     /* flex-direction: row; */
     text-align: center;
     color: "#176B87";
@@ -157,9 +157,9 @@ box-shadow: 1px 1px 5px grey;
     /* width: 20%; */
     /* max-height: 6em; */
     /* margin:  .3em 0.3em; */
-    flex: 1;
+    /* flex: 1; */
     border-radius: .5em;
-    background-color: var(--card-color);
+    /* background-color: var(--card-color); */
 }
 
 .barChart{
