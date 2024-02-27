@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Lobster&display=swap');
+*{
+    margin: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.main{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    /* justify-content: center; */
+}
+
+nav{
+    background-color: #f7b900;
+    display: flex;
+    width: 100%;
+    height: 5vh;
+    justify-content: space-between;
+    align-items: center;
+    align-self: flex-start;
+    padding: 0 10% 0 0;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+nav h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+    padding: 0%;
+    display: flex;
+}
+
+nav ul li{
+    margin: 4px 10px;
+    padding: 3px;
+}
+
+/* heading section */
+.heading{
+    width: 100%;
+    display: flex;
+    /* padding: 10%; */
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+
+.inner{
+    width: 50%;
+    padding: 5%;
+    min-height: 50%;
+    max-height: 60%;
+    line-height: 2;
+    color: white;
+    /* align-items: center; */
+    
+}
+.inner h1{
+    font-family: "Lobster", sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.inner button{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 3px;
+}
+.inner img{
+    animation: bounce 2s infinite ease;
+}
+
+@keyframes bounce {
+    0%{
+        transform: translateY(-3vh);
+    }
+    50%{
+        transform: translateY(3vh);
+    }
+    100%{
+        transform: translateY(-3vh);
+    }
+}
